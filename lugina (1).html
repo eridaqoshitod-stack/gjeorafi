@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lugina e Preshevës – Trevat shqiptare në Serbi</title>
+<meta name="description" content="Pozita, historia, demografia, statusi dhe perspektivat e Preshevës, Bujanocit dhe Medvegjës.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* =====================================================
+   Lugina e Preshevës – stili
+   ===================================================== */
+:root{
+  --mist:#e6eeea; --paper:#f6f8f6; --ink:#0f1f28; --ink2:#173040; --slate:#27404d; --moss:#4f7561;
+  --flag:#b3202a; --flag2:#d63a45; --amber:#e0a94a; --line:rgba(15,31,40,.12); --soft:#586a72;
+  --serif:"Newsreader",Georgia,serif; --sans:"Instrument Sans",system-ui,sans-serif;
+  --r:20px; --wrap:1180px;
+  --sh:0 1px 2px rgba(15,31,40,.06),0 18px 40px -18px rgba(15,31,40,.28);
+  --sh-lg:0 2px 4px rgba(15,31,40,.08),0 34px 70px -24px rgba(15,31,40,.4);
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  --ridge:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 70' preserveAspectRatio='none'%3E%3Cpath d='M0 70V44L70 28 140 40 230 10 320 36 410 18 500 46 600 22 700 40 800 6 890 34 980 16 1090 42 1200 24V70Z'/%3E%3C/svg%3E");
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--sans);color:var(--ink);line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;
+  background:var(--paper);
+  background-image:radial-gradient(1100px 600px at 100% 0,rgba(224,169,74,.10),transparent 60%),radial-gradient(900px 600px at 0 40%,rgba(79,117,97,.09),transparent 60%)}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.12;letter-spacing:-.015em}
+a{color:inherit}
+code{font-size:.84em;background:rgba(15,31,40,.08);padding:1px 7px;border-radius:6px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:6px}
+button{font:inherit;color:inherit;cursor:pointer}
+::selection{background:var(--flag);color:#fff}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px;position:relative}
+.wrap.narrow{max-width:800px}
+
+/* ===== Progress + header ===== */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--flag),var(--amber));z-index:70}
+.top{position:fixed;inset:0 0 auto 0;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,48px);z-index:60;color:#fff;transition:background .35s,color .35s,box-shadow .35s,height .35s}
+.top.solid{background:rgba(246,248,246,.82);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);color:var(--ink);box-shadow:0 1px 0 var(--line);height:60px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-family:var(--serif);font-size:1.3rem;letter-spacing:-.01em}
+.brand-mark{width:26px;height:22px;background:linear-gradient(160deg,var(--flag2),var(--flag));clip-path:polygon(0 100%,32% 28%,52% 62%,74% 8%,100% 100%)}
+.menu-btn{border:1.5px solid currentColor;background:rgba(255,255,255,.06);backdrop-filter:blur(6px);border-radius:99px;padding:7px 22px;font-weight:500;transition:all .25s}
+.menu-btn:hover{background:var(--flag);border-color:var(--flag);color:#fff}
+.menu{position:fixed;inset:0;z-index:55;overflow:auto;padding:110px 28px 50px;color:#fff;
+  background:radial-gradient(800px 500px at 90% 0,rgba(224,169,74,.18),transparent 60%),linear-gradient(160deg,#0a1820,#173040)}
+.menu[hidden]{display:none}
+.menu-inner{max-width:var(--wrap);margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:42px}
+.menu-col h3{font-size:1.45rem;color:var(--amber);margin-bottom:14px;font-style:italic;font-weight:400}
+.menu-col a{display:block;text-decoration:none;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12);color:#dce6ea;transition:all .25s}
+.menu-col a:hover{color:#fff;padding-left:10px;border-color:var(--amber)}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:100vh;color:#fff;display:flex;flex-direction:column;justify-content:center;overflow:hidden;padding:120px 28px 170px;background:#08121a;isolation:isolate}
+.hero-art{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
+.hero-art g{transition:transform .12s linear}
+.star{animation:tw 4.5s ease-in-out infinite;opacity:.15}
+@keyframes tw{50%{opacity:.9}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,18,26,.55),rgba(8,18,26,0) 42%,rgba(8,18,26,.55) 100%),var(--noise);opacity:1;mix-blend-mode:normal}
+.mist{position:absolute;left:-20%;width:140%;height:240px;z-index:-1;border-radius:50%;filter:blur(46px);pointer-events:none;background:radial-gradient(closest-side,rgba(255,255,255,.28),transparent)}
+.m1{bottom:14%;animation:drift 38s ease-in-out infinite alternate}
+.m2{bottom:2%;opacity:.8;animation:drift 52s ease-in-out infinite alternate-reverse}
+@keyframes drift{to{transform:translateX(12%)}}
+.hero-copy{position:relative;max-width:var(--wrap);width:100%;margin:0 auto;animation:rise 1.2s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hero-kicker{color:#f6d58e;font-weight:500;margin-bottom:22px;letter-spacing:.02em;display:inline-flex;align-items:center;gap:14px}
+.hero-kicker::before{content:"";width:46px;height:2px;background:var(--flag2)}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.4rem);max-width:15ch;font-weight:400;line-height:1.02;text-shadow:0 4px 50px rgba(0,0,0,.45)}
+.hero-lead{max-width:54ch;margin:26px 0 34px;font-size:1.2rem;color:#eef3f5;text-shadow:0 2px 18px rgba(0,0,0,.4)}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.scroll-cue{position:absolute;left:50%;bottom:128px;width:26px;height:44px;border:2px solid rgba(255,255,255,.55);border-radius:20px;transform:translateX(-50%)}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:4px;background:#fff;animation:cue 1.8s infinite}
+@keyframes cue{0%{opacity:0;transform:translateY(0)}30%{opacity:1}100%{opacity:0;transform:translateY(16px)}}
+.hero-stats{position:absolute;left:50%;transform:translateX(-50%);bottom:26px;width:calc(100% - 56px);max-width:var(--wrap);display:grid;grid-template-columns:repeat(3,1fr);list-style:none;
+  background:rgba(8,18,26,.38);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.18);border-radius:22px;padding:6px}
+.hero-stats li{display:flex;flex-direction:column;padding:14px 26px}
+.hero-stats li+li{border-left:1px solid rgba(255,255,255,.16)}
+.hero-stats strong{font-family:var(--serif);font-size:clamp(1.6rem,3vw,2.5rem);font-weight:400;line-height:1.1}
+.hero-stats span{font-size:.9rem;color:#cfdadf}
+.btn{display:inline-block;padding:13px 30px;border-radius:99px;text-decoration:none;font-weight:600;border:1.5px solid transparent;transition:transform .25s,background .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px)}
+.btn-flag{background:linear-gradient(135deg,var(--flag2),var(--flag));color:#fff;box-shadow:0 12px 30px -10px rgba(214,58,69,.8)}
+.btn-ghost{border-color:currentColor;background:rgba(255,255,255,.06);color:inherit;backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+
+/* ===== Sections + ridge dividers ===== */
+.sec{position:relative;padding:130px 0}
+.sec-mist{background:linear-gradient(180deg,var(--mist),#eef3f0 60%,var(--mist))}
+.sec-dark{color:#eef3f5;background:radial-gradient(900px 520px at 85% 25%,rgba(224,169,74,.14),transparent 62%),radial-gradient(800px 600px at 5% 100%,rgba(214,58,69,.10),transparent 60%),linear-gradient(180deg,var(--ink),var(--ink2) 60%,var(--ink))}
+.sec-mist::before,.sec-dark::before,.sec-dark+.sec::before{content:"";position:absolute;left:0;right:0;height:70px;pointer-events:none;-webkit-mask:var(--ridge) center/100% 100% no-repeat;mask:var(--ridge) center/100% 100% no-repeat}
+.sec-mist::before{bottom:calc(100% - 1px);background:var(--mist)}
+.sec-dark::before{bottom:calc(100% - 1px);background:var(--ink)}
+.sec-dark+.sec::before{top:-1px;background:var(--ink);transform:scaleY(-1)}
+.sec-head{max-width:780px;margin-bottom:60px}
+.sec-head::before,.sec>.wrap>h2::before{content:"";display:block;width:44px;height:30px;margin-bottom:22px;background:linear-gradient(160deg,var(--flag2),var(--flag));clip-path:polygon(0 100%,32% 26%,54% 62%,76% 6%,100% 100%)}
+.sec-head h2,.sec h2{font-size:clamp(2.1rem,4.6vw,3.5rem);margin-bottom:20px}
+.sec-head p{font-size:1.16rem;color:var(--soft)}
+.sec-dark .sec-head p{color:#b9c8cf}
+.lead{font-family:var(--serif);font-size:1.6rem;line-height:1.38;margin-bottom:18px;font-style:italic;font-weight:400}
+.note-small{font-size:.88rem;color:var(--soft);margin-top:28px;max-width:70ch}
+.cols-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.notes{margin-top:60px}
+.notes>div{background:#fff;border-radius:var(--r);padding:28px 30px;box-shadow:var(--sh);border:1px solid var(--line);position:relative;overflow:hidden}
+.notes>div::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--flag),var(--amber))}
+.notes h3{font-size:1.4rem;margin-bottom:8px}
+.notes p{color:var(--soft);font-size:.98rem}
+
+/* ===== Segmented tabs ===== */
+.seg{display:inline-flex;flex-wrap:wrap;gap:4px;padding:5px;background:rgba(15,31,40,.07);border-radius:99px;margin-bottom:32px;box-shadow:inset 0 1px 3px rgba(15,31,40,.12)}
+.seg button{border:0;background:transparent;padding:10px 22px;border-radius:99px;font-weight:500;color:var(--slate);transition:all .25s}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-selected=true]{background:linear-gradient(135deg,var(--ink2),var(--ink));color:#fff;box-shadow:0 8px 18px -8px rgba(15,31,40,.7)}
+.seg-big button{padding:13px 34px;font-size:1.06rem}
+.tab-panel[hidden]{display:none}
+.tab-panel{max-width:74ch;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:42px;box-shadow:var(--sh);position:relative;overflow:hidden}
+.tab-panel::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(closest-side,rgba(224,169,74,.28),transparent)}
+.tab-panel p+p{margin-top:14px}
+
+/* ===== Map ===== */
+.map-layout{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:start}
+.map-card{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:var(--sh-lg)}
+.map-card figcaption{font-size:.85rem;color:var(--soft);padding:12px 20px;border-top:1px solid var(--line)}
+#map{width:100%;display:block}
+#map rect{fill:#dde8e3}
+.m-kosova{fill:#c7d9cf}.m-mk{fill:#e0d9c0}
+.m-label{font-family:var(--sans);font-size:12px;letter-spacing:.16em;fill:#68808a}
+.corridor{fill:none;stroke:var(--flag);stroke-width:2.5;stroke-dasharray:7 6;animation:dash 14s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-260}}
+.corridor-t{font-size:12px;fill:var(--flag);font-weight:600}
+.muni{cursor:pointer}
+.muni polygon{fill:var(--moss);fill-opacity:.7;stroke:#fff;stroke-width:3;stroke-linejoin:round;transition:fill-opacity .25s,fill .25s,filter .25s}
+.muni:hover polygon{fill:var(--slate);fill-opacity:.9}
+.muni.on polygon{fill:var(--flag);fill-opacity:.95;filter:drop-shadow(0 6px 10px rgba(179,32,42,.45))}
+.muni text{fill:#fff;font-size:13px;font-weight:600;text-anchor:middle;pointer-events:none}
+.town{fill:var(--ink)}.town-t{font-size:12px;fill:var(--ink)}
+.map-info{position:sticky;top:96px;background:#fff;border:1px solid var(--line);border-radius:26px;padding:36px;box-shadow:var(--sh);overflow:hidden}
+.map-info::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:linear-gradient(90deg,var(--flag),var(--amber))}
+.map-info h3{font-size:2.3rem;margin-bottom:12px}
+.map-info p{color:var(--soft)}
+.facts{margin:24px 0;display:grid;grid-template-columns:auto 1fr;gap:10px 22px}
+.facts dt{color:var(--soft);font-size:.93rem}.facts dd{font-weight:600}
+.link-btn{border:0;background:none;color:var(--flag);font-weight:600;text-decoration:underline;text-underline-offset:5px;padding:0}
+
+/* ===== Scale rings ===== */
+.scale{display:grid;grid-template-columns:minmax(260px,430px) 1fr;gap:64px;align-items:center}
+.rings{width:100%;filter:drop-shadow(0 30px 40px rgba(15,31,40,.18))}
+.ring{fill:rgba(79,117,97,.10);stroke:var(--moss);stroke-width:1.5;transition:fill .35s,stroke .35s}
+.ring:hover{fill:rgba(79,117,97,.2)}
+.ring.on{fill:rgba(214,58,69,.16);stroke:var(--flag)}
+.ring-core{fill:var(--flag);stroke:none}
+.ring-txt{fill:#fff;font-family:var(--serif);font-size:19px}
+.ring-txt-s{fill:var(--slate);font-size:13px;font-family:var(--sans);pointer-events:none}
+.scale-text{background:#fff;border-radius:var(--r);padding:34px 36px;box-shadow:var(--sh);border:1px solid var(--line)}
+.scale-text h3{font-size:2.2rem;margin-bottom:12px}
+.scale-text p{color:var(--soft);max-width:60ch}
+.scale-text ul{margin:16px 0 0 20px;color:var(--slate)}
+.scale-text li{margin-bottom:6px}
+.photo-row{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:90px}
+.photo-row figure:nth-child(2){margin-top:44px}
+.photo-row .ph{box-shadow:var(--sh-lg);aspect-ratio:4/3}
+.photo-row figcaption,.gallery figcaption{font-size:.9rem;color:var(--soft);margin-top:12px}
+
+/* ===== Placeholder photo ===== */
+.ph{width:100%;aspect-ratio:16/10;border-radius:24px;background-size:cover;background-position:center;background-color:#27404d;position:relative;overflow:hidden}
+.ph::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18),inset 0 -80px 80px -60px rgba(8,18,26,.35)}
+
+/* ===== Timeline ===== */
+.timeline{position:relative}
+.tl-track{display:flex;overflow-x:auto;padding:34px 4px 46px;scroll-snap-type:x proximity;position:relative;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.3) transparent}
+.tl-track::before{content:"";position:absolute;left:0;right:0;top:62px;height:2px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35) 8%,rgba(255,255,255,.35) 92%,transparent)}
+.tl-node{flex:0 0 138px;border:0;background:none;color:#a9bac2;text-align:center;scroll-snap-align:center;position:relative;padding-top:38px;transition:color .25s}
+.tl-node::before{content:"";position:absolute;top:21px;left:50%;width:20px;height:20px;margin-left:-10px;border-radius:50%;background:var(--ink);border:2px solid #86a0ab;transition:all .3s}
+.tl-node strong{display:block;font-family:var(--serif);font-size:1.2rem;font-weight:400}
+.tl-node:hover{color:#fff}
+.tl-node.on{color:#fff}
+.tl-node.on::before{background:var(--flag2);border-color:#fff;transform:scale(1.3);box-shadow:0 0 0 7px rgba(214,58,69,.25),0 0 28px rgba(214,58,69,.8)}
+.tl-card{background:linear-gradient(145deg,rgba(255,255,255,.11),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);border-radius:26px;padding:44px;max-width:860px;backdrop-filter:blur(10px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.tl-tag{display:inline-block;font-size:.85rem;font-weight:600;padding:4px 14px;border-radius:99px;background:linear-gradient(135deg,var(--amber),#f1c97b);color:var(--ink);margin-bottom:18px}
+.tl-card h3{font-size:2.3rem;margin-bottom:14px}
+.tl-card p{color:#d6e0e4;max-width:62ch;font-size:1.08rem}
+.tl-nav{display:flex;align-items:center;gap:20px;margin-top:30px;color:#b9c8cf}
+.tl-card.swap{animation:swap .5s cubic-bezier(.2,.7,.2,1)}
+@keyframes swap{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+
+/* ===== Status history ===== */
+.status-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.st-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px 30px;box-shadow:var(--sh);position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.st-card::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;background:var(--moss)}
+.st-card:nth-child(3n+2)::before{background:var(--amber)}
+.st-card:nth-child(3n)::before{background:var(--flag)}
+.st-card:hover{transform:translateY(-6px);box-shadow:var(--sh-lg)}
+.st-card small{color:var(--flag);font-weight:600;font-size:.88rem}
+.st-card h3{font-size:1.55rem;margin:6px 0 12px}
+.st-card p{font-size:.98rem;color:var(--soft)}
+
+/* ===== Status today ===== */
+.status-now{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start}
+.status-facts{display:grid;gap:16px;position:sticky;top:96px}
+.status-facts div{background:linear-gradient(135deg,var(--ink2),var(--ink));color:#fff;padding:24px 28px;border-radius:var(--r);box-shadow:var(--sh);position:relative;overflow:hidden}
+.status-facts div::after{content:"";position:absolute;right:-30px;bottom:-30px;width:110px;height:110px;border-radius:50%;background:radial-gradient(closest-side,rgba(214,58,69,.5),transparent)}
+.status-facts strong{display:block;font-family:var(--serif);font-size:1.7rem;font-weight:400;color:#f6d58e}
+.status-facts span{color:#cfdbe0;font-size:.97rem}
+.accordion details{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:12px;overflow:hidden;box-shadow:0 1px 2px rgba(15,31,40,.05);transition:box-shadow .25s}
+.accordion details[open]{box-shadow:var(--sh)}
+.accordion summary{padding:20px 26px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.accordion summary::-webkit-details-marker{display:none}
+.accordion summary::after{content:"+";display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(179,32,42,.1);color:var(--flag);font-size:1.3rem;transition:transform .3s,background .3s}
+.accordion details[open] summary::after{transform:rotate(45deg);background:var(--flag);color:#fff}
+.accordion details p{padding:0 26px 24px;color:var(--soft)}
+
+/* ===== Municipalities ===== */
+.muni-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;margin-bottom:60px}
+.muni-hero h3{font-size:clamp(2.6rem,5vw,4rem);margin-bottom:16px}
+.muni-hero p{color:var(--soft);font-size:1.1rem}
+.muni-hero figure{position:relative}
+.muni-hero figure::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--amber);border-radius:26px;z-index:0}
+.muni-hero .ph{position:relative;z-index:1;box-shadow:var(--sh-lg);aspect-ratio:4/3}
+.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 18px;box-shadow:var(--sh)}
+.stat strong{font-family:var(--serif);font-size:1.75rem;font-weight:500;display:block;line-height:1.2;color:var(--flag)}
+.stat span{font-size:.85rem;color:var(--soft)}
+.muni-cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:36px;box-shadow:var(--sh)}
+.card h4{font-family:var(--serif);font-size:1.65rem;font-weight:500;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.card p{color:var(--soft);margin-bottom:12px}
+.card ul{margin:12px 0 0 20px;color:var(--slate)}
+.card li{margin-bottom:6px}
+.card li::marker{color:var(--flag)}
+.relief{display:block;width:100%;height:100px;margin:14px 0 16px;border-radius:12px;background:linear-gradient(180deg,#eaf2ed,#f8faf8)}
+.donut-wrap{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin:18px 0}
+.donut{width:160px;height:160px;transform:rotate(-90deg);filter:drop-shadow(0 10px 14px rgba(15,31,40,.18))}
+.donut circle{fill:none;stroke-width:6;transition:stroke-dasharray 1s cubic-bezier(.2,.7,.2,1)}
+.legend{list-style:none;margin:0 !important}
+.legend li{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.legend i{width:14px;height:14px;border-radius:5px;display:inline-block}
+
+/* ===== Problems ===== */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+.chip{border:1.5px solid rgba(255,255,255,.28);background:rgba(255,255,255,.04);border-radius:99px;padding:8px 20px;color:#e2eaee;transition:all .25s}
+.chip.on,.chip:hover{background:linear-gradient(135deg,var(--amber),#f1c97b);border-color:transparent;color:var(--ink)}
+.problem-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:20px}
+.pb{background:linear-gradient(150deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:32px;transition:transform .3s,border-color .3s;backdrop-filter:blur(6px)}
+.pb:hover{transform:translateY(-5px);border-color:rgba(224,169,74,.6)}
+.pb.hide{display:none}
+.pb h3{font-size:1.55rem;margin-bottom:10px}
+.pb p{color:#c9d6db;font-size:.98rem}
+.pb .tag{display:inline-block;margin-top:18px;font-size:.8rem;color:var(--amber);border:1px solid rgba(224,169,74,.5);padding:3px 12px;border-radius:99px}
+
+/* ===== Perspectives ===== */
+.persp{display:grid;grid-template-columns:repeat(auto-fit,minmax(265px,1fr));gap:22px}
+.pp{position:relative;border-radius:var(--r);background:linear-gradient(160deg,#fff,var(--mist));padding:32px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--sh);transition:transform .3s}
+.pp:hover{transform:translateY(-5px)}
+.pp::after{content:"";position:absolute;right:-40px;bottom:-40px;width:140px;height:140px;border-radius:50%;background:radial-gradient(closest-side,var(--moss),transparent);opacity:.3;transition:transform .5s}
+.pp:hover::after{transform:scale(2.4)}
+.pp h3{font-size:1.55rem;margin-bottom:10px}
+.pp p{color:var(--soft);font-size:.98rem;position:relative}
+.vision{margin-top:56px;background:radial-gradient(500px 300px at 100% 0,rgba(224,169,74,.25),transparent 70%),linear-gradient(140deg,var(--ink2),var(--ink));color:#eef3f5;border-radius:28px;padding:50px;box-shadow:var(--sh-lg)}
+.vision h3{font-size:2.1rem;margin-bottom:18px}
+.vision ul{margin-left:22px}.vision li{margin-bottom:10px}.vision li::marker{color:var(--amber)}
+
+/* ===== Gallery ===== */
+.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.gallery figure{cursor:zoom-in;position:relative;border-radius:24px;overflow:hidden;display:grid}
+.gallery .ph{aspect-ratio:auto;height:100%;min-height:230px;border-radius:0;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.gallery figure:hover .ph{transform:scale(1.07)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;margin:0;padding:50px 22px 18px;color:#fff;font-family:var(--serif);font-size:1.15rem;background:linear-gradient(transparent,rgba(8,18,26,.78));z-index:2}
+.g1{grid-column:span 3}.g2{grid-column:span 3}.g3,.g4,.g5{grid-column:span 2}.g6{grid-column:span 6}
+.g1 .ph,.g2 .ph{min-height:340px}.g6 .ph{min-height:300px}
+
+/* ===== Lightbox ===== */
+.lightbox{position:fixed;inset:0;background:rgba(6,12,17,.94);backdrop-filter:blur(8px);z-index:90;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;gap:16px;color:#fff}
+.lightbox[hidden]{display:none}
+.lb-img{width:min(1050px,100%);aspect-ratio:16/10;background-size:cover;background-position:center;border-radius:22px;box-shadow:0 40px 100px rgba(0,0,0,.6)}
+.lb-close{position:absolute;top:18px;right:26px;font-size:2.6rem;background:none;border:0;color:#fff}
+
+/* ===== Quiz ===== */
+.quiz{background:linear-gradient(150deg,rgba(255,255,255,.11),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.18);border-radius:28px;padding:46px;backdrop-filter:blur(10px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.quiz h3{font-size:2rem;margin-bottom:24px}
+.q-meta{font-size:.92rem;color:#b9c8cf;margin-bottom:12px}
+.q-bar{height:6px;background:rgba(255,255,255,.14);border-radius:9px;margin-bottom:26px;overflow:hidden}
+.q-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--flag2),var(--amber));transition:width .5s}
+.q-opt{display:block;width:100%;text-align:left;padding:16px 22px;margin-bottom:12px;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.22);border-radius:14px;color:#fff;transition:all .25s}
+.q-opt:hover:not(:disabled){border-color:var(--amber);background:rgba(224,169,74,.12);transform:translateX(5px)}
+.q-opt.ok{background:rgba(79,117,97,.6);border-color:#8fc3a5}
+.q-opt.bad{background:rgba(179,32,42,.55);border-color:#e68189}
+.q-expl{margin:16px 0;color:#d6e0e4}
+.q-score{font-family:var(--serif);font-size:4.4rem;color:var(--amber)}
+
+/* ===== Sources / footer ===== */
+.sources{margin:18px 0 0 22px;color:var(--soft)}.sources li{margin-bottom:10px}.sources li::marker{color:var(--flag)}
+.foot{background:#091219;color:#c0cdd3;padding:44px 0}
+.foot-in{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;align-items:center}
+.foot strong{font-family:var(--serif);font-size:1.4rem;color:#fff;font-weight:400}
+.foot a{color:var(--amber)}
+
+/* ===== Responsive ===== */
+@media(max-width:900px){
+  .sec{padding:92px 0}
+  .map-layout,.scale,.status-now,.muni-hero,.muni-cols,.photo-row{grid-template-columns:1fr}
+  .map-info,.status-facts{position:static}
+  .photo-row figure:nth-child(2){margin-top:0}
+  .muni-hero figure::before{display:none}
+  .gallery{grid-template-columns:1fr 1fr}
+  .g1,.g2,.g5,.g6{grid-column:span 2}.g3,.g4{grid-column:span 1}
+  .hero{padding:110px 22px 40px;justify-content:flex-start}
+  .hero-stats{position:relative;left:auto;bottom:auto;transform:none;width:100%;margin-top:50px;grid-template-columns:1fr}
+  .hero-stats li+li{border-left:0;border-top:1px solid rgba(255,255,255,.16)}
+  .scroll-cue{display:none}
+  .stat-row{grid-template-columns:1fr}
+  .tab-panel,.quiz,.tl-card{padding:28px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none !important;transition:none !important}
+  .star{opacity:.6}
+}
+
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="top" id="top">
+  <a class="brand" href="#hero"><span class="brand-mark" aria-hidden="true"></span>Lugina e Preshevës</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Temat</button>
+</header>
+
+<nav class="menu" id="menu" aria-label="Lista e temave" hidden>
+  <div class="menu-inner">
+    <div class="menu-col">
+      <h3>Trevat dhe vendndodhja</h3>
+      <a href="#pozita">Pozita gjeografike e trevave shqiptare në Serbi</a>
+      <a href="#shtrirja">Shtrirja territoriale dhe rëndësia e tyre</a>
+    </div>
+    <div class="menu-col">
+      <h3>Historia dhe statusi</h3>
+      <a href="#historia">Përkatësia historike</a>
+      <a href="#kronologjia">Ndryshimet territoriale dhe administrative</a>
+      <a href="#statusi-historik">Statusi në periudha të ndryshme</a>
+      <a href="#statusi-sot">Statusi administrativ sot dhe të drejtat e pakicës</a>
+    </div>
+    <div class="menu-col">
+      <h3>Tri komunat</h3>
+      <a href="#komunat" data-tab="presheva">Presheva: pozita, relievi, popullsia</a>
+      <a href="#komunat" data-tab="bujanoci">Bujanoci: pozita, relievi, popullsia</a>
+      <a href="#komunat" data-tab="medvegja">Medvegja: pozita, relievi, popullsia</a>
+    </div>
+    <div class="menu-col">
+      <h3>Sot dhe nesër</h3>
+      <a href="#problemet">Problematikat kryesore</a>
+      <a href="#perspektivat">Perspektivat dhe mundësitë e zhvillimit</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#kuizi">Kuizi</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <svg class="hero-art" id="heroArt" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#08121a"/>
+        <stop offset=".45" stop-color="#1d3a4a"/>
+        <stop offset=".8" stop-color="#c98a4b"/>
+        <stop offset="1" stop-color="#f1c97b"/>
+      </linearGradient>
+    </defs>
+    <rect width="1600" height="900" fill="url(#sky)"/>
+    <defs><radialGradient id="glow"><stop offset="0" stop-color="#fff2cc"/><stop offset=".25" stop-color="#f6d58e" stop-opacity=".9"/><stop offset="1" stop-color="#f6d58e" stop-opacity="0"/></radialGradient></defs>
+    <g id="stars"></g>
+    <circle cx="1180" cy="540" r="330" fill="url(#glow)"/>
+    <circle cx="1180" cy="540" r="62" fill="#fff0c7"/>
+    <g data-speed=".05"><path d="M0 620 L180 470 L330 580 L520 400 L700 570 L860 460 L1040 600 L1240 430 L1420 590 L1600 480 V900 H0Z" fill="#3b5a66" opacity=".8"/></g>
+    <g data-speed=".12"><path d="M0 700 L140 600 L300 680 L480 540 L660 690 L820 590 L1000 700 L1180 580 L1380 700 L1600 610 V900 H0Z" fill="#294652"/></g>
+    <g data-speed=".2"><path d="M0 790 L200 690 L380 770 L560 660 L760 780 L960 700 L1160 790 L1340 710 L1600 790 V900 H0Z" fill="#1c3340"/></g>
+    <g data-speed=".3"><path d="M0 860 L260 790 L520 850 L800 780 L1100 860 L1400 800 L1600 850 V900 H0Z" fill="#0f1e27"/></g>
+  </svg>
+  <div class="mist m1" aria-hidden="true"></div><div class="mist m2" aria-hidden="true"></div>
+  <div class="hero-copy">
+    <p class="hero-kicker">Preshevë · Bujanoc · Medvegjë</p>
+    <h1>Një luginë shqiptare<br>në jug të Serbisë</h1>
+    <p class="hero-lead">Tri komuna, një rrugë që lidh Ballkanin me Mesdheun dhe një popullsi që ruan gjuhën, kujtesën dhe ëndrrën për të ardhmen e saj. Zbulo gjeografinë, historinë dhe sfidat e kësaj treve.</p>
+    <div class="hero-actions">
+      <a class="btn btn-flag" href="#pozita">Fillo udhëtimin</a>
+      <a class="btn btn-ghost" href="#kronologjia">Shih kronologjinë</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#pozita" aria-label="Zbrit poshtë"></a>
+  <ul class="hero-stats">
+    <li><strong data-count="3">0</strong><span>komuna</span></li>
+    <li><strong data-count="1248" data-suffix=" km²">0</strong><span>sipërfaqe e përafërt</span></li>
+    <li><strong data-count="58" data-prefix="rreth " data-suffix=" mijë">0</strong><span>shqiptarë sipas regjistrimit të fundit</span></li>
+  </ul>
+</section>
+
+<!-- ============ 1. POZITA ============ -->
+<section class="sec" id="pozita">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Pozita gjeografike e trevave shqiptare në Serbi</h2>
+      <p>Shqiptarët e Serbisë jetojnë në pjesën jugore të vendit, në një brez të ngushtë ndërmjet Kosovës në perëndim dhe Maqedonisë së Veriut në jug. Njihet si Lugina e Preshevës dhe përfshin komunat Preshevë, Bujanoc dhe Medvegjë.</p>
+    </header>
+
+    <div class="map-layout">
+      <figure class="map-card">
+        <svg id="map" viewBox="0 0 600 520" role="img" aria-label="Harta skematike e Luginës së Preshevës">
+          <rect width="600" height="520" fill="#e3ebe7"/>
+          <polygon class="m-kosova" points="0,0 170,0 170,160 220,280 250,410 290,450 0,470"/>
+          <polygon class="m-mk" points="0,470 290,450 370,440 460,470 600,470 600,520 0,520"/>
+          <text class="m-label" x="70" y="230">KOSOVA</text>
+          <text class="m-label" x="300" y="505">MAQEDONIA E VERIUT</text>
+          <text class="m-label" x="440" y="90">SERBIA</text>
+          <path class="corridor" d="M420 0 C390 100 350 200 330 270 S320 380 320 470"/>
+          <text class="corridor-t" x="352" y="40">Korridori X (E75)</text>
+          <g class="muni" data-muni="medvegja" tabindex="0" role="button" aria-label="Medvegja">
+            <polygon points="170,60 300,40 335,120 310,190 230,205 170,160"/>
+            <text x="245" y="128">Medvegja</text>
+          </g>
+          <g class="muni" data-muni="bujanoci" tabindex="0" role="button" aria-label="Bujanoci">
+            <polygon points="230,205 310,190 405,230 415,310 340,352 270,340 222,282"/>
+            <text x="320" y="278">Bujanoci</text>
+          </g>
+          <g class="muni" data-muni="presheva" tabindex="0" role="button" aria-label="Presheva">
+            <polygon points="270,340 340,352 402,382 372,440 290,450 250,410"/>
+            <text x="322" y="408">Presheva</text>
+          </g>
+          <circle class="town" cx="470" cy="245" r="5"/><text class="town-t" x="480" y="249">Vranja</text>
+          <circle class="town" cx="80" cy="330" r="5"/><text class="town-t" x="90" y="334">Gjilani</text>
+          <circle class="town" cx="440" cy="488" r="5"/><text class="town-t" x="450" y="486">Kumanova</text>
+        </svg>
+        <figcaption>Harta skematike, jo në shkallë. Kliko mbi një komunë.</figcaption>
+      </figure>
+
+      <aside class="map-info" id="mapInfo" aria-live="polite">
+        <h3 id="mapTitle">Zgjidh një komunë</h3>
+        <p id="mapText">Lugina shtrihet përgjatë rrjedhës së Moravës së Jugut dhe degëve të saj. Është një nga pikat ku Serbia takohet me Kosovën dhe Maqedoninë e Veriut.</p>
+        <dl class="facts" id="mapFacts"></dl>
+        <button class="link-btn" id="mapGo" hidden>Shih detajet e komunës</button>
+      </aside>
+    </div>
+
+    <div class="cols-3 notes">
+      <div><h3>Në kufi me dy shtete</h3><p>Në perëndim lugina prek Kosovën, në jug Maqedoninë e Veriut. Pikëkalimi i Miratocit ndodhet në këtë brez kufitar.</p></div>
+      <div><h3>Dy rrethe administrative</h3><p>Presheva dhe Bujanoci i përkasin Rrethit të Pçinjës (me qendër në Vranjë), ndërsa Medvegja Rrethit të Jabllanicës (me qendër në Leskovac).</p></div>
+      <div><h3>Fqinjë të ndryshëm</h3><p>Në verilindje bie në sy Vranja, në perëndim Gjilani dhe Kamenica, në jug Kumanova. Këto lidhje ndikojnë në ekonominë, familjet dhe tregun e punës.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. SHTRIRJA ============ -->
+<section class="sec sec-mist" id="shtrirja">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Shtrirja territoriale dhe rëndësia e tyre</h2>
+      <p>Territori është i vogël, por pozita e tij është e madhe. Zgjidh një nivel dhe shih pse lugina ka peshë në Ballkan, në Mesdhe dhe në Evropë.</p>
+    </header>
+    <div class="scale">
+      <svg class="rings" viewBox="0 0 400 400" aria-hidden="true">
+        <circle class="ring" data-ring="3" cx="200" cy="200" r="190"/>
+        <circle class="ring" data-ring="2" cx="200" cy="200" r="145"/>
+        <circle class="ring" data-ring="1" cx="200" cy="200" r="100"/>
+        <circle class="ring ring-core" data-ring="0" cx="200" cy="200" r="52"/>
+        <text x="200" y="205" text-anchor="middle" class="ring-txt">Lugina</text>
+        <text x="200" y="130" text-anchor="middle" class="ring-txt-s">Ballkani</text>
+        <text x="200" y="82" text-anchor="middle" class="ring-txt-s">Mesdheu</text>
+        <text x="200" y="36" text-anchor="middle" class="ring-txt-s">Evropa</text>
+      </svg>
+      <div class="scale-panel">
+        <div class="seg" role="tablist" id="scaleTabs">
+          <button role="tab" aria-selected="true" data-ring="0">Vetë lugina</button>
+          <button role="tab" aria-selected="false" data-ring="1">Ballkani</button>
+          <button role="tab" aria-selected="false" data-ring="2">Mesdheu</button>
+          <button role="tab" aria-selected="false" data-ring="3">Evropa</button>
+        </div>
+        <div class="scale-text" id="scaleText" aria-live="polite"></div>
+      </div>
+    </div>
+    <div class="photo-row">
+      <figure><div class="ph" data-img="presheva-qendra.jpg" data-art="valley" role="img" aria-label="Pamje nga Presheva"></div><figcaption>Pamje nga lugina. Vendos foton tënde te <code>presheva-qendra.jpg</code></figcaption></figure>
+      <figure><div class="ph" data-img="korridori.jpg" data-art="dawn" role="img" aria-label="Autostrada në luginë"></div><figcaption>Aksi veri–jug i luginës. <code>korridori.jpg</code></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. HISTORIA ============ -->
+<section class="sec" id="historia">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Përkatësia historike e Preshevës, Bujanocit dhe Medvegjës</h2>
+      <p>Të tria komunat kanë një rrënjë të përbashkët historike, por secila e ka përjetuar ndryshe shekullin XIX dhe XX.</p>
+    </header>
+    <div class="tabs" data-tabs>
+      <div class="seg" role="tablist">
+        <button role="tab" aria-selected="true" data-target="h-presheva">Presheva</button>
+        <button role="tab" aria-selected="false" data-target="h-bujanoci">Bujanoci</button>
+        <button role="tab" aria-selected="false" data-target="h-medvegja">Medvegja</button>
+      </div>
+      <div class="tab-panel" id="h-presheva">
+        <p class="lead">Presheva është qendra më e theksuar shqiptare e luginës dhe një nga vendbanimet më të vjetra të saj.</p>
+        <p>Në antikitet hapësira bën pjesë në botën e Dardanisë. Gjatë periudhës osmane vendbanimi zhvillohet si qendër tregtare dhe zanatçore në rrugën që lidh Shkupin me Nishin. Në fund të shek. XIX trevat e Preshevës mbeten brenda sistemit osman, ndërsa shumë shqiptarë nga krahinat më në veri dëbohen drejt Kosovës dhe Maqedonisë në vitet 1877–78. Në vitet 1912–13 Presheva kalon nën Serbinë.</p>
+      </div>
+      <div class="tab-panel" id="h-bujanoci" hidden>
+        <p class="lead">Bujanoci ka qenë gjithmonë një komunë e përzier, me shqiptarë në fshatrat e luginës dhe popullsi sllave në pjesën lindore.</p>
+        <p>Në shekujt osmanë, Bujanoci është një nga vendet ku takohen rrugët drejt Vranjës dhe Gjilanit. Si Presheva, edhe ai mbetet nën administrimin osman deri në Luftërat Ballkanike, kur kalon nën Serbinë. Pas vitit 1945 mbetet jashtë Krahinës Autonome të Kosovës, edhe pse lidhjet familjare dhe ekonomike me Gjilanin vazhdojnë.</p>
+      </div>
+      <div class="tab-panel" id="h-medvegja" hidden>
+        <p class="lead">Medvegja ka një rrugëtim të ndryshëm: kalon më herët nën Serbinë dhe ka një përqindje më të vogël shqiptare.</p>
+        <p>Pas luftës serbo-osmane të 1877–78, krahina e Jabllanicës, ku bën pjesë edhe Medvegja, bëhet pjesë e shtetit serb. Ndryshimet e asaj kohe ndikojnë fort në përbërjen e popullsisë. Sot shqiptarët jetojnë kryesisht në qytet dhe në disa fshatra, si Sijarina, ku gjendet edhe burimi termal i njohur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. KRONOLOGJIA ============ -->
+<section class="sec sec-dark" id="kronologjia">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Ndryshimet territoriale dhe administrative nëpër vite</h2>
+      <p>Kliko mbi një vit ose përdor shigjetat e tastierës për të lëvizur nëpër kronologji.</p>
+    </header>
+    <div class="timeline" id="timeline">
+      <div class="tl-track" id="tlTrack" role="tablist" aria-label="Kronologjia"></div>
+      <article class="tl-card" id="tlCard" aria-live="polite">
+        <span class="tl-tag" id="tlTag"></span>
+        <h3 id="tlTitle"></h3>
+        <p id="tlText"></p>
+        <div class="tl-nav">
+          <button class="btn btn-ghost" id="tlPrev">Para</button>
+          <span id="tlCount"></span>
+          <button class="btn btn-ghost" id="tlNext">Pas</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. STATUSI HISTORIK ============ -->
+<section class="sec" id="statusi-historik">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Statusi i trevave shqiptare në periudha të ndryshme historike</h2>
+      <p>Çdo regjim ka sjellë një status tjetër për shqiptarët e luginës: nga pjesë e hapësirës osmane, te pakicë në shtete sllave.</p>
+    </header>
+    <div class="status-grid" id="statusGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 6. STATUSI SOT ============ -->
+<section class="sec sec-mist" id="statusi-sot">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Statusi administrativ sot dhe të drejtat e pakicës shqiptare</h2>
+      <p>Presheva, Bujanoci dhe Medvegja janë njësi të vetëqeverisjes lokale të Republikës së Serbisë. Shqiptarët njihen si pakicë kombëtare, me të drejta që garantohen me ligj, por që në praktikë nuk zbatohen gjithmonë plotësisht.</p>
+    </header>
+    <div class="status-now">
+      <div class="status-facts">
+        <div><strong>Komuna</strong><span>njësi të vetëqeverisjes lokale me kuvend dhe kryetar të zgjedhur</span></div>
+        <div><strong>2 rrethe</strong><span>Pçinja (Preshevë, Bujanoc) dhe Jabllanica (Medvegjë)</span></div>
+        <div><strong>Pakicë kombëtare</strong><span>njohur nga Kushtetuta e Serbisë dhe ligjet për pakicat</span></div>
+      </div>
+      <div class="accordion" id="rights">
+        <details open><summary>Gjuha dhe shkrimi</summary><p>Gjuha shqipe është në përdorim zyrtar në komunat ku pakica kalon pragun ligjor, si Presheva dhe Bujanoci. Aty dokumentet, tabelat dhe procedurat duhet të ofrohen edhe në shqip. Zbatimi në praktikë është i pabarabartë, sidomos në institucionet shtetërore.</p></details>
+        <details><summary>Arsimi</summary><p>Mësimi fillor dhe i mesëm ekziston në gjuhën shqipe në Preshevë dhe Bujanoc. Sfidat kryesore janë teksti shkollor, mungesa e kuadrove dhe njohja e diplomave nga Kosova.</p></details>
+        <details><summary>Përfaqësimi politik</summary><p>Partitë e pakicave kombëtare përjashtohen nga pragu zgjedhor, kështu që shqiptarët kanë përfaqësues në Kuvendin e Serbisë dhe në kuvendet lokale. Presheva ka kryetare shqiptare. Përfaqësimi në administratën shtetërore mbetet më i ulët se pesha e popullsisë.</p></details>
+        <details><summary>Këshilli Kombëtar i Shqiptarëve</summary><p>Ligji për Këshillat Kombëtarë (2009) lejon pakicat të krijojnë një organ që vendos për çështje të arsimit, kulturës, informimit dhe përdorimit të gjuhës. Këshilli i shqiptarëve është një nga mekanizmat ku ndërthuret institucioni dhe komuniteti.</p></details>
+        <details><summary>Media dhe kultura</summary><p>Ekzistojnë media lokale në gjuhën shqipe, por financimi dhe qasja në frekuenca janë të kufizuara. Shoqëritë kulturore dhe ngjarjet tradicionale ruajnë identitetin në çdo komunë.</p></details>
+        <details><summary>Detyrimet ndërkombëtare</summary><p>Serbia është palë e Konventës Kornizë për Mbrojtjen e Pakicave Kombëtare dhe e Kartës Evropiane për Gjuhët Rajonale ose të Pakicave. Raportet e Këshillit të Evropës vlerësojnë rregullisht zbatimin.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7–12. KOMUNAT ============ -->
+<section class="sec" id="komunat">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Tri komunat nga afër</h2>
+      <p>Zgjidh një komunë për të parë pozitën gjeografike, relievin, veçoritë natyrore dhe përbërjen e popullsisë.</p>
+    </header>
+    <div class="seg seg-big" role="tablist" id="muniTabs">
+      <button role="tab" aria-selected="true" data-muni="presheva">Presheva</button>
+      <button role="tab" aria-selected="false" data-muni="bujanoci">Bujanoci</button>
+      <button role="tab" aria-selected="false" data-muni="medvegja">Medvegja</button>
+    </div>
+    <div id="muniPanel"></div>
+    <p class="note-small">Shifrat janë të rrumbullakosura dhe orientuese. Regjistrimet e fundit janë bojkotuar pjesërisht nga shqiptarët, ndaj ka diferenca mes shifrave zyrtare dhe vlerësimeve të komunitetit. Për shifra të sakta, shih Zyrën Statistikore të Serbisë.</p>
+  </div>
+</section>
+
+<!-- ============ 13. PROBLEMET ============ -->
+<section class="sec sec-dark" id="problemet">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Problematikat kryesore të trevave shqiptare në Serbi</h2>
+      <p>Filtro sipas fushës për të parë sfidat që përmenden më shpesh nga institucionet, organizatat dhe banorët.</p>
+    </header>
+    <div class="chips" id="chips">
+      <button class="chip on" data-f="all">Të gjitha</button>
+      <button class="chip" data-f="ekonomi">Ekonomia</button>
+      <button class="chip" data-f="arsim">Arsimi</button>
+      <button class="chip" data-f="politike">Përfaqësimi</button>
+      <button class="chip" data-f="demografi">Demografia</button>
+      <button class="chip" data-f="infra">Infrastruktura</button>
+    </div>
+    <div class="problem-grid" id="problemGrid"></div>
+  </div>
+</section>
+
+<!-- ============ 14. PERSPEKTIVAT ============ -->
+<section class="sec" id="perspektivat">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Perspektivat dhe mundësitë e zhvillimit</h2>
+      <p>Lugina ka burime që nuk shfrytëzohen sa duhet: vendndodhjen, tokën pjellore, diasporën dhe energjinë e popullsisë së re.</p>
+    </header>
+    <div class="persp" id="persp"></div>
+    <div class="vision">
+      <h3>Çfarë duhet që këto mundësi të bëhen realitet?</h3>
+      <ul>
+        <li>Investime publike në rrugë, ujë, internet dhe shërbime shëndetësore.</li>
+        <li>Përfaqësim më i drejtë i shqiptarëve në administratë, polici dhe gjyqësor.</li>
+        <li>Bashkëpunim ekonomik me Kosovën dhe Maqedoninë e Veriut.</li>
+        <li>Mbështetje për të rinjtë, që të kenë arsye të qëndrojnë.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section class="sec sec-mist" id="galeria">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2>Galeria</h2>
+      <p>Vendos fotot e tua pranë skedarit <code>lugina.html</code>, me emrat e treguar nën secilën kornizë. Nëse foto mungon, shfaqet një ilustrim.</p>
+    </header>
+    <div class="gallery" id="gallery">
+      <figure class="g1"><div class="ph" data-img="galeri-1.jpg" data-art="dawn"></div><figcaption>Agim mbi luginë</figcaption></figure>
+      <figure class="g2"><div class="ph" data-img="galeri-2.jpg" data-art="green"></div><figcaption>Moravica dhe fushat</figcaption></figure>
+      <figure class="g3"><div class="ph" data-img="galeri-3.jpg" data-art="night"></div><figcaption>Radani mbi Medvegjë</figcaption></figure>
+      <figure class="g4"><div class="ph" data-img="galeri-4.jpg" data-art="valley"></div><figcaption>Qendra e Preshevës</figcaption></figure>
+      <figure class="g5"><div class="ph" data-img="galeri-5.jpg" data-art="green"></div><figcaption>Fshatrat e Bujanocit</figcaption></figure>
+      <figure class="g6"><div class="ph" data-img="galeri-6.jpg" data-art="dawn"></div><figcaption>Sijarina dhe burimet termale</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KUIZI ============ -->
+<section class="sec sec-dark" id="kuizi">
+  <div class="wrap narrow">
+    <header class="sec-head">
+      <h2>Sa e di luginën?</h2>
+      <p>Pesë pyetje të shpejta për të provuar çka mësove.</p>
+    </header>
+    <div class="quiz" id="quiz"></div>
+  </div>
+</section>
+
+<!-- ============ BURIMET ============ -->
+<section class="sec" id="burimet">
+  <div class="wrap narrow">
+    <h2>Burimet për lexim të mëtejshëm</h2>
+    <ul class="sources">
+      <li>Zyra Statistikore e Republikës së Serbisë: regjistrimet e popullsisë 2002, 2011 dhe 2022.</li>
+      <li>Këshilli i Evropës: raportet e Komitetit Këshillimor për Konventën Kornizë.</li>
+      <li>Ligji për Mbrojtjen e të Drejtave dhe Lirive të Pakicave Kombëtare dhe Ligji për Këshillat Kombëtarë.</li>
+      <li>Literaturë historike për Kosovën Lindore, Luftërat Ballkanike dhe Jugosllavinë.</li>
+    </ul>
+    <p class="note-small">Për punim shkollor, verifiko çdo shifër dhe datë me burime të cituara.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <strong>Lugina e Preshevës</strong>
+    <span>Projekt shkollor për trevat shqiptare në Serbi</span>
+    <a href="#hero">Kthehu lart</a>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden><button class="lb-close" aria-label="Mbyll">×</button><div class="lb-img" id="lbImg"></div><p id="lbCap"></p></div>
+<script>
+'use strict';
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+
+/* ================= DATA ================= */
+const MUNI = {
+  presheva: {
+    name: 'Presheva', area: 264, alt: '400–450 m', pop: '~33 mijë', share: '~94% shqiptarë', district: 'Rrethi i Pçinjës',
+    intro: 'Qendra më e madhe shqiptare e luginës, në jug të saj, afër kufirit me Maqedoninë e Veriut.',
+    geo: 'Presheva shtrihet në pjesën jugore të luginës, ndërmjet Bujanocit në veri dhe kufirit me Maqedoninë e Veriut në jug. Në perëndim ka kontakt me Kosovën. Qyteti ndodhet në rrugën që lidh Vranjën me Kumanovën dhe Shkupin.',
+    relief: 'Relievi është kryesisht fushor dhe kodrinor, me lartësi rreth 400–450 m. Në perëndim ngrihen pjerrësitë e Karadakut, ndërsa në lindje kodrat zbresin drejt luginës së Moravës.',
+    nature: ['Klimë kontinentale e butë me ndikime të ngrohta nga ana e Vardarit', 'Tokë pjellore për perime, drithëra dhe pemë', 'Lumenj dhe përrenj të vegjël që furnizojnë Moravën e Jugut', 'Pyje dhe kullota në anët e kodrave'],
+    profile: 'M0 70 L40 60 L80 64 L130 48 L180 30 L230 44 L290 58 L340 62 L400 66',
+    split: [['Shqiptarë', 94, '#b3202a'], ['Serbë', 5, '#27404d'], ['Të tjerë', 1, '#d9a441']],
+    demo: 'Presheva ka shumicë të madhe shqiptare dhe popullsi relativisht të re. Qyteti ka rritje të ngadaltë, por shumë të rinj largohen për punë në Evropën Perëndimore.',
+    traits: ['Shumica shqiptare dhe e besimit mysliman', 'Familje të mëdha dhe lidhje të forta me diasporën', 'Emigrim i lartë drejt Zvicrës, Gjermanisë dhe Austrisë', 'Papunësi e lartë mes të rinjve'],
+    art: 'valley', img: 'presheva.jpg'
+  },
+  bujanoci: {
+    name: 'Bujanoci', area: 461, alt: '430–460 m', pop: '~41 mijë', share: '~62% shqiptarë', district: 'Rrethi i Pçinjës',
+    intro: 'Komuna e përzier e luginës, ku shqiptarët, serbët dhe romët jetojnë në të njëjtën hapësirë.',
+    geo: 'Bujanoci shtrihet në qendër të luginës, ndërmjet Medvegjës në veriperëndim, Preshevës në jug dhe Vranjës në verilindje. Nëpër të kalon aksi kryesor veri–jug i Korridorit X.',
+    relief: 'Pjesa qendrore është fushë e hapur dhe pjellore. Në lindje ngrihet kurrizi i Rujanit, ndërsa në perëndim zgjerohen kodrat drejt kufirit me Kosovën. Këtu takohen Moravica e Binçës dhe lumenj të tjerë që formojnë Moravën e Jugut.',
+    nature: ['Fushë e gjerë bujqësore në luginë', 'Rrjedha e Moravës së Binçës dhe e degëve të saj', 'Mali Rujan me pyje dhe livadhe', 'Rrugë dhe hekurudhë që e bëjnë një nyje transporti'],
+    profile: 'M0 62 L50 58 L110 60 L170 52 L220 56 L270 36 L320 20 L370 38 L400 50',
+    split: [['Shqiptarë', 62, '#b3202a'], ['Serbë', 25, '#27404d'], ['Të tjerë', 13, '#d9a441']],
+    demo: 'Bujanoci ka përbërje shumëkombëshe. Shqiptarët janë shumicë në qytet dhe në fshatrat perëndimore, serbët më shumë në lindje. Ndarja etnike ndikon në politikën lokale dhe në shërbimet publike.',
+    traits: ['Shumëetnike: shqiptarë, serbë, romë', 'Qyteti i ndarë në lagje me përbërje të ndryshme', 'Popullsi e vjetër në fshatrat e larguara', 'Regjistrimet e bojkotuara e vështirësojnë peshën reale të shqiptarëve'],
+    art: 'green', img: 'https://bujanoci.ch/images/Bujanoc/fromAbove.jpeg'
+  },
+  medvegja: {
+    name: 'Medvegja', area: 523, alt: '450–500 m', pop: '~6 mijë', share: '~14% shqiptarë', district: 'Rrethi i Jabllanicës',
+    intro: 'Komuna malore në veriperëndim, më e rrallë në popullsi, por e pasur me natyrë dhe burime termale.',
+    geo: 'Medvegja shtrihet në veriperëndim të luginës dhe kufizohet me Kosovën në perëndim. Është më e largët nga aksi kryesor dhe i përket Rrethit të Jabllanicës.',
+    relief: 'Relievi është malor dhe i thyer. Mbi komunë ngrihen shpatet e Radanit, me vija të thella lumenjsh dhe fshatra të shpërndarë. Fushat janë të vogla dhe pjesa më e madhe e territorit është pyll ose kullotë.',
+    nature: ['Mali i Radanit me pyje të dendura', 'Lumi Jabllanica dhe përrenj malorë', 'Burimet termale të Sijarinës', 'Potencial për turizëm malor dhe shëndetësor'],
+    profile: 'M0 60 L40 44 L90 28 L140 40 L190 12 L240 34 L290 18 L340 40 L400 52',
+    split: [['Shqiptarë', 14, '#b3202a'], ['Serbë', 77, '#27404d'], ['Të tjerë', 9, '#d9a441']],
+    demo: 'Medvegja ka popullsi të pakët që është zvogëluar vazhdimisht nga shpopullimi dhe emigrimi. Shqiptarët janë pakicë, por e ruajnë gjuhën dhe jetën e tyre kulturore, sidomos në qytet dhe në disa fshatra.',
+    traits: ['Dendësi shumë e ulët e popullsisë', 'Rënie e vazhdueshme e numrit të banorëve', 'Shqiptarët janë pakicë me peshë të vogël në pushtetin lokal', 'Lidhje të ngushta me Kosovën dhe Bujanocin'],
+    art: 'night', img: 'medvegja.jpg'
+  }
+};
+
+const MAP_INFO = {
+  presheva: 'Komuna më jugore e luginës, afër kufirit me Maqedoninë e Veriut dhe qendra kryesore shqiptare.',
+  bujanoci: 'Komuna qendrore, ku kalon aksi kryesor veri–jug dhe ku jetojnë shqiptarë, serbë dhe romë.',
+  medvegja: 'Komuna malore në veriperëndim, në këmbët e Radanit, e lidhur me Kosovën dhe Rrethin e Jabllanicës.'
+};
+
+const SCALE = [
+  { t: 'Vetë lugina', p: 'Rreth 1 250 km² me tri komuna. Nga ky territor i vogël del një peshë që nuk matet vetëm me sipërfaqen, sepse shqiptarët këtu jetojnë pranë kufijve të dy shteteve dhe përbëjnë një urë mes Kosovës, Maqedonisë së Veriut dhe Shqipërisë.', l: [] },
+  { t: 'Në Ballkan', p: 'Lugina është pjesë e një hapësire kyçe ku takohen popuj dhe shtete.', l: ['Lidh Kosovën me Maqedoninë e Veriut dhe Serbinë jugore', 'Përbën pjesë të hapësirës etnike shqiptare në Ballkanin Perëndimor', 'Qëndrimi i saj ndikon në marrëdhëniet Beograd–Prishtinë'] },
+  { t: 'Në Mesdhe', p: 'Përmes luginës kalon korridori Vardar–Morava, rruga natyrore që lidh Danubin me Selanikun dhe detin Egje.', l: ['Rruga e Morava-Vardarit ka qenë shekuj me radhë rrugë tregtare', 'Lidh Evropën Qendrore me portet e Mesdheut', 'Klima dhe bujqësia marrin ndikime mesdhetare'] },
+  { t: 'Në Evropë', p: 'Korridori X lidh Evropën Qendrore dhe Jugore. Çdo zhvillim në luginë është i lidhur edhe me integrimin e Serbisë, të Kosovës dhe të Ballkanit Perëndimor në Bashkimin Evropian.', l: ['Pjesë e rrugës evropiane E75', 'Diaspora në Evropën Perëndimore e lidh luginën me tregjet evropiane', 'Standardet evropiane për pakicat janë masa për shtetin'] }
+];
+
+const TIMELINE = [
+  ['Antikitet', 'Dardania', 'Territor', 'Hapësira e luginës bën pjesë në Dardaninë antike, një nga trevat ku shqiptarët e shohin rrënjën e vet historike.'],
+  ['Shek. XV', 'Hyrja e osmanëve', 'Administrativ', 'Rajoni futet në sistemin osman. Ndryshon administrimi, përhapet islami dhe vendbanimet zhvillohen si qendra tregtare në rrugën Shkup–Nish.'],
+  ['1877', 'Vilajeti i Kosovës', 'Administrativ', 'Krijohet Vilajeti i Kosovës. Shqiptarët e trevave jugore përfshihen në një kornizë administrative të përbashkët me Kosovën.'],
+  ['1877–78', 'Lufta serbo-osmane dhe dëbimet', 'Territor', 'Shqiptarë nga Nishi, Toplica, Leskovci dhe Vranja dëbohen drejt Kosovës dhe Maqedonisë. Krahina e Jabllanicës, ku bën pjesë Medvegja, kalon në shtetin serb.'],
+  ['1912–13', 'Luftërat Ballkanike', 'Territor', 'Serbia pushton Preshevën dhe Bujanocin. Kufijtë konfirmohen nga marrëveshjet ndërkombëtare të 1913-s dhe ndahen nga pjesa tjetër e trevave shqiptare.'],
+  ['1918–1929', 'Mbretëria Serbo-Kroato-Sllovene', 'Administrativ', 'Trevat bëhen pjesë e shtetit jugosllav. Ndryshon organizimi administrativ dhe ndiqen politika të kolonizimit dhe shpërnguljes.'],
+  ['1941–45', 'Lufta e Dytë Botërore', 'Territor', 'Rajoni përjeton ndryshime të përkohshme administrative nën pushtimin e Boshtit dhe lëvizjet e popullsisë.'],
+  ['1945–1974', 'Jugosllavia socialiste', 'Administrativ', 'Trevat mbeten brenda Serbisë qendrore, jashtë Krahinës Autonome të Kosovës, ndërsa Kosova fiton gradualisht autonomi më të gjerë.'],
+  ['1992', 'Referendumi', 'Politik', 'Më 1–2 mars 1992 shqiptarët e luginës mbajnë referendum për autonomi politike dhe territoriale. Beogradi nuk e njeh rezultatin.'],
+  ['1999–2001', 'Konflikti i luginës', 'Politik', 'Pas luftës në Kosovë, lugina përjeton tensione të armatosura. Në pranverën e 2001 arrihet një zgjidhje me ndërmjetësim ndërkombëtar dhe fillon integrimi i shqiptarëve në polici dhe në institucione lokale.'],
+  ['2002–2009', 'Ligjet për pakicat', 'Administrativ', 'Serbia miraton ligje për mbrojtjen e pakicave kombëtare (2002) dhe për Këshillat Kombëtarë (2009). Shqiptarët krijojnë Këshillin e tyre Kombëtar.'],
+  ['2008–sot', 'Pas pavarësisë së Kosovës', 'Politik', 'Lugina mbetet pjesë e Serbisë, ndërsa çështja e të drejtave dhe zhvillimit të saj hyn në agjendën e dialogut dhe të integrimit evropian.']
+];
+
+const STATUS = [
+  ['Deri më 1912', 'Periudha osmane', 'Trevat janë pjesë e sistemit osman dhe më vonë e Vilajetit të Kosovës. Shqiptarët janë popullsi e vendosur dhe e rëndësishme në tregti, zanate dhe bujqësi.'],
+  ['1912–1941', 'Serbia dhe Jugosllavia e parë', 'Banorët kalojnë nga shtet shumëkombësh në një shtet ku shqiptarët janë pakicë. Kufizohen shkollat shqipe dhe të drejtat politike, dhe ndiqen politika kolonizimi.'],
+  ['1941–1945', 'Lufta e Dytë Botërore', 'Kohë ndryshimesh dhe pasigurie. Administrimi ndryshon dhe lëvizjet e popullsisë janë të shpeshta.'],
+  ['1945–1990', 'Jugosllavia socialiste', 'Shqiptarët njihen si "kombësi", por lugina mbetet jashtë Kosovës. Disa të drejta kulturore e arsimore ekzistojnë, por me kufizime dhe me kontroll politik.'],
+  ['1990–2001', 'Kriza dhe konflikti', 'Shqiptarët përballen me largime nga puna, shuarje të institucioneve dhe presion politik. Në 1992 mbajnë referendum, dhe në 2000–01 ndodh konflikti i armatosur.'],
+  ['2001–sot', 'Pas zgjidhjes së konfliktit', 'Njihen të drejta të pakicës, ka përfaqësues në pushtetin lokal dhe në Kuvendin e Serbisë, por mbeten çështje të pazgjidhura për zhvillimin dhe barazinë.']
+];
+
+const PROBLEMS = [
+  ['Papunësia dhe varfëria', 'Shkalla e papunësisë është shumë më e lartë se mesatarja e vendit, sidomos tek të rinjtë. Ka pak investime publike dhe private në luginë.', 'ekonomi', 'Ekonomi'],
+  ['Largimi i të rinjve', 'Mungesa e punës dhe e perspektivës i shtyn të rinjtë drejt emigrimit, duke e plakur popullsinë dhe duke ulur numrin e shqiptarëve.', 'demografi', 'Demografi'],
+  ['Arsimi në gjuhën shqipe', 'Mungesa e teksteve, kuadrove dhe e vazhdimësisë së arsimit të lartë në shqip, si dhe vështirësitë në njohjen e diplomave nga Kosova.', 'arsim', 'Arsim'],
+  ['Përfaqësimi në institucione', 'Shqiptarët janë të nën-përfaqësuar në administratën shtetërore, në polici, në gjyqësor dhe në ndërmarrjet publike.', 'politike', 'Përfaqësim'],
+  ['Regjistrimet dhe bojkotet', 'Bojkotimet e regjistrimeve dhe mosbesimi në institucione bëjnë që numri real i shqiptarëve të mbetet temë polemike.', 'demografi', 'Demografi'],
+  ['Infrastruktura e dobët', 'Rrugët lokale, uji, kanalizimi dhe interneti në fshatra mbeten të pazhvilluara, sidomos në Medvegjë dhe në zonat malore.', 'infra', 'Infrastrukturë'],
+  ['Përdorimi i gjuhës në praktikë', 'Edhe pse gjuha shqipe ka status zyrtar në disa komuna, dokumentet, tabelat dhe procedurat nuk ofrohen gjithmonë në shqip.', 'politike', 'Përfaqësim'],
+  ['Qasja në shërbime shëndetësore', 'Spitalet dhe specialistët janë larg, kurse çështja e gjuhës e vështirëson komunikimin me institucionet shëndetësore.', 'infra', 'Infrastrukturë'],
+  ['Tregu i punës dhe ndërmarrjet', 'Pak ndërmarrje të mëdha, informalitet i lartë dhe qasje e kufizuar në kredi dhe në fonde për bizneset e vogla.', 'ekonomi', 'Ekonomi']
+];
+
+const PERSP = [
+  ['Korridori X', 'Autostrada dhe hekurudha mund ta bëjnë luginën qendër logjistike dhe industriale.'],
+  ['Bujqësi moderne', 'Toka pjellore dhe klima e favorshme lejojnë perime, pemë dhe bimë të përpunuara me vlerë të lartë.'],
+  ['Zona ekonomike', 'Zonat e lira dhe parqet industriale mund të sjellin investime dhe vende pune.'],
+  ['Bashkëpunim ndërkufitar', 'Projektet me Kosovën dhe Maqedoninë e Veriut hapin tregje më të mëdha dhe fonde evropiane.'],
+  ['Turizëm natyror dhe termal', 'Radani, Rujani dhe burimet termale të Sijarinës mund të zhvillohen në destinacione të reja.'],
+  ['Diaspora dhe të rinjtë', 'Kapitali, përvoja dhe lidhjet e diasporës mund të shndërrohen në biznese lokale dhe praktika të reja.'],
+  ['Energji e ripërtëritshme', 'Dielli dhe fuqia e lumenjve japin mundësi për energji të pastër dhe kursim për familjet.'],
+  ['Integrimi evropian', 'Procesi i anëtarësimit të Serbisë mund të forcojë mbrojtjen e pakicave dhe fondet për zhvillim rajonal.']
+];
+
+const QUIZ = [
+  ['Cilat janë tri komunat e Luginës së Preshevës?', ['Preshevë, Bujanoc, Medvegjë', 'Preshevë, Vranjë, Leskovac', 'Bujanoc, Gjilan, Kumanovë', 'Medvegjë, Podujevë, Preshevë'], 0, 'Lugina përbëhet nga komunat Preshevë, Bujanoc dhe Medvegjë.'],
+  ['Cili korridor kalon përmes luginës dhe lidh Evropën me Egjeun?', ['Korridori VIII', 'Korridori X', 'Korridori V', 'Korridori IV'], 1, 'Korridori X, aksi Vardar–Morava, lidh Evropën Qendrore me Selanikun.'],
+  ['Kur u mbajt referendumi i shqiptarëve të luginës për autonomi?', ['1974', '1981', '1992', '2008'], 2, 'Referendumi u mbajt më 1–2 mars 1992.'],
+  ['Cila komunë i përket Rrethit të Jabllanicës?', ['Presheva', 'Bujanoci', 'Medvegja', 'Asnjëra'], 2, 'Medvegja i përket Rrethit të Jabllanicës, ndërsa Presheva dhe Bujanoci Rrethit të Pçinjës.'],
+  ['Cili mal ngrihet mbi Medvegjën?', ['Rujani', 'Karadaku', 'Kopaoniku', 'Radani'], 3, 'Mbi Medvegjë ngrihet masivi i Radanit.']
+];
+
+/* ================= ART FALLBACK ================= */
+function rand(seed) { let s = [...seed].reduce((a, c) => a + c.charCodeAt(0), 7); return () => (s = (s * 9301 + 49297) % 233280) / 233280; }
+const PAL = {
+  dawn:   { sky: ['#1d3a4a', '#c98a4b', '#f4d28c'], layers: ['#8aa3a8', '#5d7f86', '#3b5b66', '#223c48'], sun: '#fff0c7' },
+  valley: { sky: ['#3a6a7e', '#a9c9c3', '#e8efd9'], layers: ['#9dbdad', '#6f9a84', '#4a7662', '#2d523f'], sun: '#fffbe3' },
+  green:  { sky: ['#4d7f78', '#b8d1a9', '#f1e9bc'], layers: ['#a7c6a0', '#79a67c', '#4e8060', '#2f5640'], sun: '#fff6cf' },
+  night:  { sky: ['#050c12', '#16303f', '#3c5f72'], layers: ['#456779', '#2d4d5c', '#1a3340', '#0d1e29'], sun: '#eef3f5', stars: true }
+};
+function artSVG(kind, seed) {
+  const P = PAL[kind] || PAL.valley, r = rand(seed + kind), sx = Math.round(180 + r() * 640), sy = Math.round(150 + r() * 70);
+  let paths = '', stars = '';
+  if (P.stars) for (let i = 0; i < 70; i++) stars += `<circle cx="${Math.round(r() * 1000)}" cy="${Math.round(r() * 300)}" r="${(r() * 1.6 + .4).toFixed(1)}" fill="#fff" opacity="${(r() * .7 + .2).toFixed(2)}"/>`;
+  P.layers.forEach((c, i) => {
+    const base = 270 + i * 62; let d = `M0 ${base}`;
+    for (let x = 0; x <= 1060; x += 70 + r() * 70) d += ` L${Math.round(x)} ${Math.round(base - 30 - r() * (170 - i * 38))}`;
+    paths += `<path d="${d} L1000 600 L0 600Z" fill="${c}"/>`;
+    if (i < 3) paths += `<rect y="${base + 6}" width="1000" height="70" fill="url(#m)" opacity="${.5 - i * .12}"/>`;
+  });
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${P.sky[0]}"/><stop offset=".55" stop-color="${P.sky[1]}"/><stop offset="1" stop-color="${P.sky[2]}"/></linearGradient><linearGradient id="m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><radialGradient id="s"><stop offset="0" stop-color="${P.sun}" stop-opacity=".95"/><stop offset=".3" stop-color="${P.sun}" stop-opacity=".45"/><stop offset="1" stop-color="${P.sun}" stop-opacity="0"/></radialGradient></defs><rect width="1000" height="600" fill="url(#g)"/>${stars}<circle cx="${sx}" cy="${sy}" r="190" fill="url(#s)"/><circle cx="${sx}" cy="${sy}" r="${P.stars ? 30 : 42}" fill="${P.sun}"/>${paths}</svg>`;
+}
+function initPhotos(root = document) {
+  $$('.ph', root).forEach((el, i) => {
+    if (el.dataset.ready) return; el.dataset.ready = 1;
+    const seed = el.dataset.img || String(i);
+    el.style.backgroundImage = `url("data:image/svg+xml,${encodeURIComponent(artSVG(el.dataset.art, seed))}")`;
+    if (el.dataset.img) {
+      const src = el.dataset.img, remote = /^https?:/.test(src);
+      const base = src.replace(/\.(jpe?g|png|webp|JPG|JPEG|PNG|WEBP)$/, '');
+      const list = remote ? [src] : ['jpg', 'jpeg', 'png', 'webp', 'JPG', 'JPEG', 'PNG', 'WEBP'].map(x => base + '.' + x);
+      (function tryNext(k) {
+        if (k >= list.length) return;
+        const im = new Image();
+        im.onload = () => { el.style.backgroundImage = `url("${list[k]}")`; };
+        im.onerror = () => tryNext(k + 1);
+        im.src = list[k];
+      })(0);
+    }
+  });
+}
+
+/* ================= HERO STARS ================= */
+(function () {
+  const g = $('#stars'); if (!g) return; const r = rand('yje'); let h = '';
+  for (let i = 0; i < 90; i++) h += `<circle class="star" style="animation-delay:${(r() * 5).toFixed(1)}s" cx="${Math.round(r() * 1600)}" cy="${Math.round(r() * 480)}" r="${(r() * 1.6 + .4).toFixed(1)}" fill="#fff"/>`;
+  g.innerHTML = h;
+})();
+
+/* ================= HEADER / MENU / PROGRESS ================= */
+const header = $('#top'), menu = $('#menu'), menuBtn = $('#menuBtn');
+function onScroll() {
+  const h = document.documentElement, sc = h.scrollTop;
+  $('#progress').style.width = (sc / (h.scrollHeight - h.clientHeight) * 100) + '%';
+  header.classList.toggle('solid', sc > 60 && menu.hidden);
+  $$('#heroArt g').forEach(g => g.style.transform = `translateY(${sc * (+g.dataset.speed) * -0.35}px)`);
+}
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+function toggleMenu(open) {
+  menu.hidden = !open; menuBtn.setAttribute('aria-expanded', open); menuBtn.textContent = open ? 'Mbyll' : 'Temat';
+  document.body.style.overflow = open ? 'hidden' : ''; header.classList.toggle('solid', !open && scrollY > 60);
+  if (open) header.classList.remove('solid');
+}
+menuBtn.onclick = () => toggleMenu(menu.hidden);
+$$('#menu a').forEach(a => a.addEventListener('click', () => {
+  toggleMenu(false);
+  if (a.dataset.tab) setTimeout(() => openMuni(a.dataset.tab), 50);
+}));
+addEventListener('keydown', e => { if (e.key === 'Escape') { toggleMenu(false); closeLB(); } });
+
+/* ================= COUNTERS ================= */
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (!e.isIntersecting) return; io.unobserve(e.target);
+  const el = e.target, to = +el.dataset.count, pre = el.dataset.prefix || '', suf = el.dataset.suffix || '', t0 = performance.now();
+  (function tick(t) { const p = Math.min(1, (t - t0) / 1400); el.textContent = pre + Math.round(to * (1 - Math.pow(1 - p, 3))).toLocaleString('sq') + suf; if (p < 1) requestAnimationFrame(tick); })(t0);
+}), { threshold: .4 });
+$$('[data-count]').forEach(el => io.observe(el));
+
+/* ================= GENERIC TABS ================= */
+$$('[data-tabs]').forEach(box => {
+  const tabs = $$('[role=tab]', box);
+  tabs.forEach(t => t.addEventListener('click', () => {
+    tabs.forEach(x => x.setAttribute('aria-selected', x === t));
+    $$('.tab-panel', box).forEach(p => p.hidden = p.id !== t.dataset.target);
+  }));
+});
+
+/* ================= MAP ================= */
+function selectMapMuni(id) {
+  $$('.muni').forEach(m => m.classList.toggle('on', m.dataset.muni === id));
+  const m = MUNI[id];
+  $('#mapTitle').textContent = m.name; $('#mapText').textContent = MAP_INFO[id];
+  $('#mapFacts').innerHTML = `<dt>Sipërfaqja</dt><dd>${m.area} km²</dd><dt>Lartësia</dt><dd>${m.alt}</dd><dt>Popullsia</dt><dd>${m.pop}</dd><dt>Shqiptarët</dt><dd>${m.share}</dd><dt>Rrethi</dt><dd>${m.district}</dd>`;
+  const go = $('#mapGo'); go.hidden = false; go.textContent = 'Shih detajet për ' + m.name; go.onclick = () => { openMuni(id); $('#komunat').scrollIntoView(); };
+}
+$$('.muni').forEach(m => {
+  m.addEventListener('click', () => selectMapMuni(m.dataset.muni));
+  m.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); selectMapMuni(m.dataset.muni); } });
+});
+
+/* ================= SCALE RINGS ================= */
+function setScale(i) {
+  $$('#scaleTabs button').forEach(b => b.setAttribute('aria-selected', +b.dataset.ring === i));
+  $$('.ring').forEach(r => r.classList.toggle('on', +r.dataset.ring === i));
+  const s = SCALE[i];
+  $('#scaleText').innerHTML = `<h3>${s.t}</h3><p>${s.p}</p>` + (s.l.length ? `<ul>${s.l.map(x => `<li>${x}</li>`).join('')}</ul>` : '');
+}
+$$('#scaleTabs button').forEach(b => b.onclick = () => setScale(+b.dataset.ring));
+$$('.ring').forEach(r => { r.style.cursor = 'pointer'; r.onclick = () => setScale(+r.dataset.ring); });
+setScale(0);
+
+/* ================= TIMELINE ================= */
+let tl = 0;
+const track = $('#tlTrack');
+track.innerHTML = TIMELINE.map((e, i) => `<button class="tl-node" role="tab" data-i="${i}"><strong>${e[0]}</strong></button>`).join('');
+function setTL(i) {
+  tl = (i + TIMELINE.length) % TIMELINE.length; const e = TIMELINE[tl];
+  $$('.tl-node').forEach((n, k) => { n.classList.toggle('on', k === tl); n.setAttribute('aria-selected', k === tl); });
+  $('#tlTag').textContent = e[2]; $('#tlTitle').textContent = e[0] + ': ' + e[1]; $('#tlText').textContent = e[3];
+  $('#tlCount').textContent = (tl + 1) + ' / ' + TIMELINE.length;
+  const card = $('#tlCard'); card.classList.remove('swap'); void card.offsetWidth; card.classList.add('swap');
+  const n = $$('.tl-node')[tl]; track.scrollTo({ left: n.offsetLeft - track.clientWidth / 2 + n.offsetWidth / 2, behavior: 'smooth' });
+}
+track.addEventListener('click', e => { const b = e.target.closest('.tl-node'); if (b) setTL(+b.dataset.i); });
+$('#tlPrev').onclick = () => setTL(tl - 1); $('#tlNext').onclick = () => setTL(tl + 1);
+$('#timeline').addEventListener('keydown', e => { if (e.key === 'ArrowRight') setTL(tl + 1); if (e.key === 'ArrowLeft') setTL(tl - 1); });
+setTL(0);
+
+/* ================= STATUS CARDS ================= */
+$('#statusGrid').innerHTML = STATUS.map(s => `<article class="st-card"><small>${s[0]}</small><h3>${s[1]}</h3><p>${s[2]}</p></article>`).join('');
+
+/* ================= MUNICIPALITIES ================= */
+function renderMuni(id) {
+  const m = MUNI[id];
+  const total = m.split.reduce((a, s) => a + s[1], 0); let off = 0;
+  const circles = m.split.map(s => { const len = s[1] / total * 100, c = `<circle cx="21" cy="21" r="15.915" stroke="${s[2]}" stroke-dasharray="0 100" data-len="${len}" stroke-dashoffset="${-off}"/>`; off += len; return c; }).join('');
+  $('#muniPanel').innerHTML = `
+  <div class="muni-hero">
+    <div>
+      <h3>${m.name}</h3><p>${m.intro}</p>
+      <div class="stat-row">
+        <div class="stat"><strong>${m.area} km²</strong><span>sipërfaqja</span></div>
+        <div class="stat"><strong>${m.pop}</strong><span>banorë</span></div>
+        <div class="stat"><strong>${m.alt}</strong><span>lartësia mesatare</span></div>
+      </div>
+    </div>
+    <figure><div class="ph" data-img="${m.img}" data-art="${m.art}" role="img" aria-label="${m.name}"></div><figcaption class="note-small">${m.img.startsWith('http') ? 'Pamje nga lart. Burimi: bujanoci.ch' : 'Foto: vendos <code>' + m.img + '</code>'}</figcaption></figure>
+  </div>
+  <div class="muni-cols">
+    <section class="card" id="${id}-geo">
+      <h4>Pozita gjeografike, relievi dhe veçoritë natyrore</h4>
+      <p>${m.geo}</p>
+      <svg class="relief" viewBox="0 0 400 80" preserveAspectRatio="none" aria-label="Profil skematik i relievit"><path d="${m.profile} L400 80 L0 80Z" fill="#4f7561" opacity=".3"/><path d="${m.profile}" fill="none" stroke="#4f7561" stroke-width="2.5"/></svg>
+      <p>${m.relief}</p>
+      <ul>${m.nature.map(n => `<li>${n}</li>`).join('')}</ul>
+    </section>
+    <section class="card" id="${id}-demo">
+      <h4>Përbërja e popullsisë dhe karakteristikat demografike</h4>
+      <p>${m.demo}</p>
+      <div class="donut-wrap">
+        <svg class="donut" viewBox="0 0 42 42" role="img" aria-label="Përbërja etnike">${circles}</svg>
+        <ul class="legend">${m.split.map(s => `<li><i style="background:${s[2]}"></i>${s[0]}: rreth ${s[1]}%</li>`).join('')}</ul>
+      </div>
+      <ul>${m.traits.map(n => `<li>${n}</li>`).join('')}</ul>
+    </section>
+  </div>`;
+  initPhotos($('#muniPanel'));
+  requestAnimationFrame(() => requestAnimationFrame(() => $$('#muniPanel .donut circle').forEach(c => c.setAttribute('stroke-dasharray', `${c.dataset.len} ${100 - c.dataset.len}`))));
+}
+function openMuni(id) {
+  $$('#muniTabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.muni === id));
+  renderMuni(id);
+}
+$$('#muniTabs button').forEach(b => b.onclick = () => openMuni(b.dataset.muni));
+openMuni('presheva');
+
+/* ================= PROBLEMS ================= */
+$('#problemGrid').innerHTML = PROBLEMS.map(p => `<article class="pb" data-cat="${p[2]}"><h3>${p[0]}</h3><p>${p[1]}</p><span class="tag">${p[3]}</span></article>`).join('');
+$('#chips').addEventListener('click', e => {
+  const c = e.target.closest('.chip'); if (!c) return;
+  $$('.chip').forEach(x => x.classList.toggle('on', x === c));
+  $$('.pb').forEach(p => p.classList.toggle('hide', c.dataset.f !== 'all' && p.dataset.cat !== c.dataset.f));
+});
+
+/* ================= PERSPECTIVES ================= */
+$('#persp').innerHTML = PERSP.map(p => `<article class="pp"><h3>${p[0]}</h3><p>${p[1]}</p></article>`).join('');
+
+/* ================= GALLERY + LIGHTBOX ================= */
+const lb = $('#lightbox');
+function closeLB() { lb.hidden = true; }
+$('#gallery').addEventListener('click', e => {
+  const f = e.target.closest('figure'); if (!f) return;
+  $('#lbImg').style.backgroundImage = $('.ph', f).style.backgroundImage; $('#lbCap').textContent = $('figcaption', f).textContent; lb.hidden = false;
+});
+lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lb-close')) closeLB(); });
+
+/* ================= QUIZ ================= */
+let qi = 0, score = 0;
+function renderQ() {
+  const box = $('#quiz');
+  if (qi >= QUIZ.length) {
+    const msg = score === QUIZ.length ? 'Shkëlqyeshëm!' : score >= 3 ? 'Mirë, por ka ende diçka për të mësuar.' : 'Rilexo faqen dhe provo përsëri.';
+    box.innerHTML = `<p class="q-meta">Rezultati yt</p><div class="q-score">${score} / ${QUIZ.length}</div><p class="q-expl">${msg}</p><button class="btn btn-flag" id="qAgain">Provo përsëri</button>`;
+    $('#qAgain').onclick = () => { qi = 0; score = 0; renderQ(); }; return;
+  }
+  const q = QUIZ[qi];
+  box.innerHTML = `<p class="q-meta">Pyetja ${qi + 1} nga ${QUIZ.length}</p><div class="q-bar"><i style="width:${qi / QUIZ.length * 100}%"></i></div><h3>${q[0]}</h3>` +
+    q[1].map((o, i) => `<button class="q-opt" data-i="${i}">${o}</button>`).join('') + `<div id="qFeed"></div>`;
+  $$('.q-opt', box).forEach(b => b.onclick = () => {
+    const i = +b.dataset.i; $$('.q-opt', box).forEach(x => { x.disabled = true; if (+x.dataset.i === q[2]) x.classList.add('ok'); });
+    if (i === q[2]) score++; else b.classList.add('bad');
+    $('#qFeed').innerHTML = `<p class="q-expl">${q[3]}</p><button class="btn btn-ghost" id="qNext">${qi === QUIZ.length - 1 ? 'Shih rezultatin' : 'Pyetja tjetër'}</button>`;
+    $('#qNext').onclick = () => { qi++; renderQ(); };
+  });
+}
+renderQ();
+
+initPhotos();
+
+</script>
+</body>
+</html>
